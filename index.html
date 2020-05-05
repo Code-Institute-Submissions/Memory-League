@@ -1,71 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<title>League of Memory</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>League of Memory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <script defer src="assets/js/cards.js"></script>
-</head>
+  </head>
+  <!---------------------navbar-->
+  <nav>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">level one</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="leveltwo.html">level two</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="levelthree.html">level three</a>
+      </li>
+    </ul>
+  </nav>
+  <body>
+    <!---------------------memory cards (12)-->
+    <section class="memory-game">
+      <div class="memory-card" data-champion="Caitlyn">
+        <img
+          class="front-face"
+          src="assets/images/champions/caitlyn.png"
+          alt="Caitlyn"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
+      <div class="memory-card" data-champion="Caitlyn">
+        <img
+          class="front-face"
+          src="assets/images/champions/caitlyn.png"
+          alt="Caitlyn"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
 
-<body>
-	<section class="memory-game">
-    <div class="memory-card" data-champion="Caitlyn">
-      <img class="front-face" src="assets/images/champions/caitlyn.png" alt="Caitlyn" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
-    <div class="memory-card" data-champion="Caitlyn">
-      <img class="front-face" src="assets/images/champions/caitlyn.png" alt="Caitlyn" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
+      <div class="memory-card" data-champion="Darius">
+        <img
+          class="front-face"
+          src="assets/images/champions/darius.png"
+          alt="Darius"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
+      <div class="memory-card" data-champion="Darius">
+        <img
+          class="front-face"
+          src="assets/images/champions/darius.png"
+          alt="Darius"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
 
-    <div class="memory-card" data-champion="Darius">
-      <img class="front-face" src="assets/images/champions/darius.png" alt="Darius" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
-    <div class="memory-card" data-champion="Darius">
-      <img class="front-face" src="assets/images/champions/darius.png" alt="Darius" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
+      <div class="memory-card" data-champion="Ezreal">
+        <img
+          class="front-face"
+          src="assets/images/champions/ezreal.png"
+          alt="Ezreal"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
+      <div class="memory-card" data-champion="Ezreal">
+        <img
+          class="front-face"
+          src="assets/images/champions/ezreal.png"
+          alt="Ezreal"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
 
-    <div class="memory-card" data-champion="Ezreal">
-      <img class="front-face" src="assets/images/champions/ezreal.png" alt="Ezreal" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
-    <div class="memory-card" data-champion="Ezreal">
-      <img class="front-face" src="assets/images/champions/ezreal.png" alt="Ezreal" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
+      <div class="memory-card" data-champion="Gangplank">
+        <img
+          class="front-face"
+          src="assets/images/champions/gangplank.png"
+          alt="Gangplank"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
+      <div class="memory-card" data-champion="Gangplank">
+        <img
+          class="front-face"
+          src="assets/images/champions/gangplank.png"
+          alt="Gangplank"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
 
-    <div class="memory-card" data-champion="Gangplank">
-      <img class="front-face" src="assets/images/champions/gangplank.png" alt="Gangplank" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
-    <div class="memory-card" data-champion="Gangplank">
-      <img class="front-face" src="assets/images/champions/gangplank.png" alt="Gangplank" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
+      <div class="memory-card" data-champion="Graves">
+        <img
+          class="front-face"
+          src="assets/images/champions/graves.png"
+          alt="Graves"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
+      <div class="memory-card" data-champion="Graves">
+        <img
+          class="front-face"
+          src="assets/images/champions/graves.png"
+          alt="Graves"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
 
-    <div class="memory-card" data-champion="Graves">
-      <img class="front-face" src="assets/images/champions/graves.png" alt="Graves" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
-    <div class="memory-card" data-champion="Graves">
-      <img class="front-face" src="assets/images/champions/graves.png" alt="Graves" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
-
-    <div class="memory-card" data-champion="Katarina">
-      <img class="front-face" src="assets/images/champions/katarina.png" alt="Katarina" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
-    <div class="memory-card" data-champion="Katarina">
-      <img class="front-face" src="assets/images/champions/katarina.png" alt="Katarina" />
-      <img class="back-face" src="assets/images/other/cardlogo.png" alt="League Logo" />
-    </div>
-  </section>
-</body>
-
+      <div class="memory-card" data-champion="Katarina">
+        <img
+          class="front-face"
+          src="assets/images/champions/katarina.png"
+          alt="Katarina"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
+      <div class="memory-card" data-champion="Katarina">
+        <img
+          class="front-face"
+          src="assets/images/champions/katarina.png"
+          alt="Katarina"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+      </div>
+    </section>
+  </body>
 </html>

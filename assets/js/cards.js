@@ -60,5 +60,4 @@ function resetBoard() {
   });
 })(); //IIFE so the cards get shuffled at the start of the game
 
-
 cards.forEach((card) => card.addEventListener("click", flipCard));
