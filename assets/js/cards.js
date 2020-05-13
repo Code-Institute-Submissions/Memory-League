@@ -1,5 +1,5 @@
 /*----------------------------create list of memory-cards*/
-const cards = document.querySelectorAll(".memory-card");
+const cards = document.querySelectorAll(".memory-card,.memory-card3");
 
 let hasFlippedCard = false;
 let firstCard, secondCard;

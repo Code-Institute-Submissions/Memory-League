@@ -1,3 +1,4 @@
+/*--------------------------------------------CLEAN UP DUPLICATE CLASSES!!!!*/
 * {
   padding: 0;
   margin: 0;
@@ -30,19 +31,56 @@ a {
 }
 
 /*--------------------------------------------memory card container*/
+/*--------------------------------------------CLEAN UP DUPLICATE CLASSES!!!!*/
 .memory-game {
-  width: 640px;
-  height: 640px;
+  width: 40rem;
+  height: 40rem;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  perspective: 1000px;
+  perspective: 62.5rem;
 }
+.memory-game2 {
+  width: 60rem;
+  height: 40rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 62.5rem;
+}
+.memory-game3 {
+  width: 80rem;
+  height: 40rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 62.5rem;
+}
+
 /*--------------------------------------------memory cards*/
+/*--------------------------------------------CLEAN UP DUPLICATE CLASSES!!!!*/
 .memory-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
+  width: calc(25% - 0.625rem);
+  height: calc(33.333% - 0.625rem);
+  margin: 0.313rem;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.memory-card2 {
+  width: calc(16.666% - 0.625rem);
+  height: calc(33.333% - 0.625rem);
+  margin: 0.313rem;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.memory-card3 {
+  width: calc(12.5% - 0.625rem);
+  height: calc(33.333% - 0.625rem);
+  margin: 0.313rem;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
@@ -52,14 +90,19 @@ a {
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 1.25rem;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   background-image: linear-gradient(#1c7ccc, #00ccff);
   backface-visibility: hidden;
 }
 /*--------------------------------------------click animation*/
+/*--------------------------------------------CLEAN UP DUPLICATE CLASSES!!!!*/
 div.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+div.memory-card3:active {
   transform: scale(0.97);
   transition: transform 0.2s;
 }
@@ -67,14 +110,17 @@ div.memory-card:active {
 .memory-card.flip {
   transform: rotateY(180deg);
 }
+.memory-card3.flip {
+  transform: rotateY(180deg);
+}
 
 .front-face,
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 1.25rem;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   background-image: linear-gradient(#1c7ccc, #00ccff);
   backface-visibility: hidden;
 }
@@ -86,7 +132,7 @@ div.memory-card:active {
 footer {
   width: 100%;
   background-color: #222;
-  padding: 60px, 0px;
+  padding: 3.75rem 0rem;
   font-family: leaguefont;
   background: -webkit-linear-gradient(#ff9900, #ffff66);
   -webkit-background-clip: text;
