@@ -1,5 +1,7 @@
 /*----------------------------create list of memory-cards*/
-const cards = document.querySelectorAll(".memory-card,.memory-card3");
+const cards = document.querySelectorAll(
+  ".memory-card,.memory-card2,.memory-card3"
+);
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
@@ -25,9 +27,10 @@ function flipCard() {
 }
 
 function checkForMatch() {
-  let isMatch = firstCard.dataset.champion === secondCard.dataset.champion;
+  let Match = firstCard.dataset.frontface === secondCard.dataset.frontface;
+  
 
-  isMatch ? disableCards() : unflipCards();
+  Match ? disableCards() : unflipCards();
 }
 
 function disableCards() {
@@ -45,7 +48,7 @@ function unflipCards() {
     secondCard.classList.remove("flip");
 
     resetBoard(); //unlock board when cards have flipped
-  }, 1500); //timeout to still see front face when not a match
+  }, 1500); //timeout to still see the front face when not a match
 }
 
 function resetBoard() {
@@ -55,9 +58,10 @@ function resetBoard() {
 
 (function shuffle() {
   cards.forEach((card) => {
-    let randomPosition = Math.floor(Math.random() * 12); //Math.random returns random number between 0 and 1 excluding 1, so * 12 to get 12 numbers
+    let randomPosition = Math.floor(Math.random() * 24); //Math.random returns random number between 0 and 1 excluding 1, so * 12 to get 12 numbers
     card.style.order = randomPosition;
   });
 })(); //IIFE so the cards get shuffled at the start of the game
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
+
