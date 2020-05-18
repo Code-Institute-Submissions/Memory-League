@@ -65,3 +65,5 @@ function resetBoard() {
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
+// set screen orientation to landscape on mobile devices. 
+screen.orientation.lock('landscape');
