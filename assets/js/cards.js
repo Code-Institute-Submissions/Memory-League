@@ -48,7 +48,7 @@ function unflipCards() {
     secondCard.classList.remove("flip");
 
     resetBoard(); //unlock board when cards have flipped
-  }, 1500); //timeout to still see the front face when not a match
+  }, 1500); //timeout to see the front face when not a match
 }
 
 function resetBoard() {
@@ -65,5 +65,3 @@ function resetBoard() {
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
-// set screen orientation to landscape on mobile devices. 
-screen.orientation.lock('landscape');
