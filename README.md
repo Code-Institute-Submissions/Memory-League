@@ -1,87 +1,84 @@
 # League of Memory
 
 League of Memory is a League of Legends themed memory game for (currently) 1 player.
-League of Memory consists of three levels (1,2,3) with each one getting a bit more difficult.
+League of Memory consists of three levels with each one getting a bit more difficult.
  
 ## UX
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to play a memory game for fun, and have a overall good experience.
+- As a user type, I want to play a memory game and have a fun experience.
 
 My wireframes created as part of the design process are made in balsamiq and can be found in the wireframes directory located in this project. 
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
-- navigation menu which lets you choose between 3 different levels. 
-- Level one consists of 12 memory cards (6 pairs) match all the cards to complete the level.
-- Level one consists of 18 memory cards (9 paris) match all the cards to complete the level.
-- Level three consists of 24 memory cards (12 pairs) match all the cards to complete the level.
-- On each level there is a reset button present which resets the level.
+
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- Navigation menu - allows players to navigate through the three different levels. 
-- Memory game - allows the player to play a memory game by clicking on the cards and try to find a match, when a match is made, the player can move on until there are no more left. 
-- Reset button - allow to player to reset the level by clicking on the reset button
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- navigation menu allows the user to choose between 3 different levels. 
+- Level one (easy) consists of 12 memory cards (6 pairs) match all the cards to complete the level.
+- Level one (medium) consists of 18 memory cards (9 pairs) match all the cards to complete the level.
+- Level three (hard) consists of 24 memory cards (12 pairs) match all the cards to complete the level.
+- On each level there is a reset button present which allows the user to reset the level to play again.
 
 ### Features Left to Implement
-- Another feature idea
-
+- a score system indicating how well you performed (amount of turns it takes to complete the level)
+- a timer used to keep track of how long it takes the player to complete the level
+- display message when the user completed the level
+- sound queues when the player finds a match or fails to get a match. 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+- HTML
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- CSS3
+
+- [Bootstrap4](https://getbootstrap.com/)
+    - The project uses **Bootstrap4** for the navigation bar, grid system, and responsiveness.
+- [Google Fonts](https://fonts.google.com/)
+    - The project uses **Google fonts** for the different font styles used across this project
+- Javascript
+    - The project uses **Javascript** for the card matching logic. 
+       
 
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+- [W3C Markup Validation Service](https://validator.w3.org/#validate_by_uri)
+    - The project uses **W3C Markup Validation Service** for debugging/validating the HTML markup.
+- [Jigsaw](https://jigsaw.w3.org/css-validator/)
+    - The project uses **Jigsaw** for debugging/validating the CSS
+- I have tested the responsiveness for different screen sizes/devices using the google chrome developer tools in the google chrome browser (Version 80.0.3987.149)
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+### Manual testing features
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+- user is able to navigate through the side using the different menu buttons on the navigation bar, each leading to the respective level.
+- User is able to use the back/forward buttons in the browser to go back a page or forward
+- User is able to see all content on desktop and other different screens sizes.
+- User is able to flip the cards by clicking/touching them.
+- User is not able to click on more then 2 cards when it is not a match and has to wait before the cards are flipped back over.
+- 
 
 
-## Credits
+### Run code locally
 
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+1. Open the terminal, or open a new terminal using the terminal tab (Terminal > New Terminal).
+2. Enter: "python3 -m http.server" in the terminal to open port 8000.
+3. When it is done loading, click on the "Open Ports" tab in the Terminal.
+4. Look for port 8000. Then click on "Open browser" to view the website in a new browser tab 
+5. Alternatively when on the desired file click on "Open Preview" at the top right of the editor to view the content in this workspace.
 
-### Media
-- The photos used in this site were obtained from ...
 
-### Acknowledgements
+## Deployment process
 
-- I received inspiration for this project from X
+GitHub Pages is used for the deployement of this project following this process.
+
+1. Create new repository on GitHub.
+2. Use the "git add ." command to add the changes in the working directory to the staging area.
+3. Use the "git commit -m" command to save your changes to the local repository.
+4. Use the "git push" command to transfer commits from the local repository to the remote repository.
+3. On GitHub go to the repository settings and scroll down to the GitHub pages section.
+4. Select the source (master-branch).
+
+[Link to deployed version](https://kris965.github.io/league-of-memory/)
