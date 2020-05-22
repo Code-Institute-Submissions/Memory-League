@@ -4,13 +4,16 @@
   box-sizing: border-box;
   cursor: url(http://cur.cursors-4u.net/games/gam-14/gam1340.cur), auto;
 }
+
 @font-face {
   font-family: leaguefont;
   src: url("../fonts/font.ttf");
 }
 body {
-  height: 100vh;
-  /*display: flex;*/
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/other/background.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -37,7 +40,7 @@ a {
 .memory-game1,
 .memory-game2,
 .memory-game3 {
-  height: 40rem;
+  min-height: 40rem;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -88,6 +91,9 @@ a {
   background-image: linear-gradient(#1c7ccc, #00ccff);
   backface-visibility: hidden;
 }
+.card-wrapper {
+  perspective: 62.5rem;
+}
 
 /*--------------------------------------------click animation*/
 
@@ -118,8 +124,6 @@ footer {
   font-size: 3rem;
   text-transform: capitalize;
   text-align: center;
-  position: absolute;
-  bottom: 0;
 }
 /*--------------------------------------------Media querries*/
 @media screen and (max-width: 1200px) {
