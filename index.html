@@ -2,35 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>League of Memory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <script defer src="assets/js/cards.js"></script>
+    <title>Document</title>
   </head>
-  <!-------------------------------------------------navbar-->
-  <nav>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">level one</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="leveltwo.html">level two</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="levelthree.html">level three</a>
-      </li>
-    </ul>
-  </nav>
+
   <body>
+    <!-----------------------------------------------Navbar-->
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">level one</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="leveltwo.html">level two</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="levelthree.html">level three</a>
+        </li>
+      </ul>
+    </nav>
     <!-----------------------------------------------memory cards (12)-->
+    <!---------------------add div with .card-wrapper to fix perspective bug on mobile?-->
     <section class="memory-game1">
+    <div class="card-wrapper">
       <div class="memory-card" data-frontface="Caitlyn">
         <img
           class="front-face"
@@ -43,6 +44,8 @@
           alt="League Logo"
         />
       </div>
+      </div>
+      <div class="card-wrapper">
       <div class="memory-card" data-frontface="Caitlyn">
         <img
           class="front-face"
@@ -55,7 +58,8 @@
           alt="League Logo"
         />
       </div>
-
+      </div>
+      <div class="card-wrapper">
       <div class="memory-card" data-frontface="Darius">
         <img
           class="front-face"
@@ -68,6 +72,8 @@
           alt="League Logo"
         />
       </div>
+      </div>
+      <div class="card-wrapper">
       <div class="memory-card" data-frontface="Darius">
         <img
           class="front-face"
@@ -80,7 +86,8 @@
           alt="League Logo"
         />
       </div>
-
+      </div>
+      <div class="card-wrapper">
       <div class="memory-card" data-frontface="Ezreal">
         <img
           class="front-face"
@@ -93,6 +100,8 @@
           alt="League Logo"
         />
       </div>
+      </div>
+      <div class="card-wrapper">
       <div class="memory-card" data-frontface="Ezreal">
         <img
           class="front-face"
@@ -105,7 +114,8 @@
           alt="League Logo"
         />
       </div>
-
+      </div>
+      <div class="card-wrapper">
       <div class="memory-card" data-frontface="Gangplank">
         <img
           class="front-face"
@@ -118,6 +128,8 @@
           alt="League Logo"
         />
       </div>
+      </div>
+      <div class="card-wrapper">
       <div class="memory-card" data-frontface="Gangplank">
         <img
           class="front-face"
@@ -129,8 +141,23 @@
           src="assets/images/other/cardlogo.png"
           alt="League Logo"
         />
+        </div>
       </div>
-
+      <div class="card-wrapper">
+      <div class="memory-card" data-frontface="Graves">
+        <img
+          class="front-face"
+          src="assets/images/champions/graves.png"
+          alt="Graves"
+        />
+        <img
+          class="back-face"
+          src="assets/images/other/cardlogo.png"
+          alt="League Logo"
+        />
+        </div>
+      </div>
+      <div class="card-wrapper">
       <div class="memory-card" data-frontface="Graves">
         <img
           class="front-face"
@@ -143,48 +170,40 @@
           alt="League Logo"
         />
       </div>
-      <div class="memory-card" data-frontface="Graves">
-        <img
-          class="front-face"
-          src="assets/images/champions/graves.png"
-          alt="Graves"
-        />
-        <img
-          class="back-face"
-          src="assets/images/other/cardlogo.png"
-          alt="League Logo"
-        />
       </div>
-
-      <div class="memory-card" data-frontface="Katarina">
-        <img
-          class="front-face"
-          src="assets/images/champions/katarina.png"
-          alt="Katarina"
-        />
-        <img
-          class="back-face"
-          src="assets/images/other/cardlogo.png"
-          alt="League Logo"
-        />
+      <div class="card-wrapper">
+        <div class="memory-card" data-frontface="Katarina">
+          <img
+            class="front-face"
+            src="assets/images/champions/katarina.png"
+            alt="Katarina"
+          />
+          <img
+            class="back-face"
+            src="assets/images/other/cardlogo.png"
+            alt="League Logo"
+          />
+        </div>
       </div>
-      <div class="memory-card" data-frontface="Katarina">
-        <img
-          class="front-face"
-          src="assets/images/champions/katarina.png"
-          alt="Katarina"
-        />
-        <img
-          class="back-face"
-          src="assets/images/other/cardlogo.png"
-          alt="League Logo"
-        />
+      <div class="card-wrapper">
+        <div class="memory-card" data-frontface="Katarina">
+          <img
+            class="front-face"
+            src="assets/images/champions/katarina.png"
+            alt="Katarina"
+          />
+          <img
+            class="back-face"
+            src="assets/images/other/cardlogo.png"
+            alt="League Logo"
+          />
+        </div>
       </div>
     </section>
     <footer>
       <div>
-      <a href="index.html">
-        RESET
+        <a href="index.html">
+          RESET
         </a>
       </div>
     </footer>
