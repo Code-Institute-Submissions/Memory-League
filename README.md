@@ -1,4 +1,4 @@
-# League of Memory
+# Memory League
 
 League of Memory is a League of Legends themed memory game for (currently) 1 player.
 League of Memory consists of three levels with each level getting a bit more difficult.
