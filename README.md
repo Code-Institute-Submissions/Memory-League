@@ -74,7 +74,7 @@ GitHub Pages is used for the deployement of this project following this process.
 5. On GitHub go to the repository settings and scroll down to the GitHub pages section.
 6. Select the source (master-branch).
 
-[Link to deployed version](https://kris965.github.io/league-of-memory/)
+[Link to deployed version](https://kris965.github.io/Memory-League/)
 
 ## Credits
 
