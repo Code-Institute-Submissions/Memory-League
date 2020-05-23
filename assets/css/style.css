@@ -2,13 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  cursor: url(http://cur.cursors-4u.net/games/gam-14/gam1340.cur), auto;
+}
+
+html {
+  height: 100%;
 }
 
 @font-face {
   font-family: leaguefont;
   src: url("../fonts/font.ttf");
 }
+
 body {
   height: 100%;
   min-height: 100%;
@@ -20,10 +24,13 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 /*--------------------------------------------navbar*/
+
 .nav-link {
   display: block;
-  padding: 0.5rem 5rem;
+  margin: 1.875rem 0rem 0rem 1.875rem;
+  padding: 0;
 }
 
 a {
@@ -36,7 +43,6 @@ a {
 }
 
 /*--------------------------------------------memory card containers*/
-
 .memory-game1,
 .memory-game2,
 .memory-game3 {
@@ -47,19 +53,22 @@ a {
   perspective: 62.5rem;
   max-width: 100vw;
   justify-content: center;
+  margin-top: 1.25rem;
 }
+
 .memory-game1 {
   width: 40rem;
 }
+
 .memory-game2 {
   width: 60rem;
 }
+
 .memory-game3 {
   width: 80rem;
 }
 
 /*--------------------------------------------memory cards*/
-
 .memory-card,
 .memory-card2,
 .memory-card3 {
@@ -69,7 +78,7 @@ a {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  min-width: 149px;
+  min-width: 9.3125rem;
 }
 .memory-card {
   width: calc(25% - 0.625rem);
@@ -80,7 +89,6 @@ a {
 .memory-card3 {
   width: calc(12.5% - 0.625rem);
 }
-
 .front-face,
 .back-face {
   width: 100%;
@@ -91,43 +99,32 @@ a {
   background-image: linear-gradient(#1c7ccc, #00ccff);
   backface-visibility: hidden;
 }
-.card-wrapper {
-  perspective: 62.5rem;
-}
-
 /*--------------------------------------------click animation*/
-
 div.memory-card:active,
 div.memory-card2:active,
 div.memory-card3:active {
   transform: scale(0.97);
   transition: transform 0.2s;
 }
-
 .memory-card.flip,
 .memory-card2.flip,
 .memory-card3.flip {
   transform: rotateY(180deg);
 }
-
 .front-face {
   transform: rotateY(180deg);
 }
-/*--------------------------------------------Footer*/
-footer {
-  width: 100%;
-  padding: 3.75rem 0rem;
-  font-family: leaguefont;
-  background: -webkit-linear-gradient(#ff9900, #ffff66);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 3rem;
-  text-transform: capitalize;
-  text-align: center;
-}
+
 /*--------------------------------------------Media querries*/
+
 @media screen and (max-width: 1200px) {
   a {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .nav-link {
+    margin: 0;
+  }
+}
+
